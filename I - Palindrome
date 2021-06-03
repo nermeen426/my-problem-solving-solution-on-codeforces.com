@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+int N , Y=0 , X ;
+cin >> N ;
+X = N ;
+while(N > 0)
+{
+    
+    Y = (Y * 10) + (N % 10) ;
+    N = N / 10 ;
+    
+}
+cout << Y << endl ;
+ 
+if(X == Y)
+cout << "YES" << endl ;
+else 
+cout << "NO" << endl ;
+ 
+    return 0;
+}
