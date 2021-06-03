@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+int A,B,C;
+char op , comp ;
+cin >> A >> op >> B >> comp >> C ;
+if(op == '+' && comp == '='){
+    if(A + B == C)
+    cout << "Yes" << endl ;
+    else
+    cout << A + B << endl ;
+}
+else if(op == '-' && comp == '='){
+    if(A - B == C)
+    cout << "Yes" << endl ;
+    else
+    cout << A - B << endl;
+}
+else if(op == '*' && comp == '='){
+    if(A * B == C)
+    cout << "Yes" << endl ;
+    else
+    cout << A * B << endl ;
+}
+ 
+    return 0;
+}
