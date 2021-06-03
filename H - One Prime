@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+int X , j = 0 ;
+cin >> X ;
+for(int i = 2 ; i < X ; i++){
+if(X % i == 0)
+j = 1 ;
+    
+}
+if(j == 1)
+cout << " NO " << endl ;
+else
+cout << " YES " << endl ;
+    return 0;
+}
