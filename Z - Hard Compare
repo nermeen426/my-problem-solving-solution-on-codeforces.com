@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    long double A,B,C,D,x,y;
+    cin>>A>>B>>C>>D;
+    x=log(A)*B;
+    y=log(C)*D;
+    if (x>y)
+        cout<<"YES";
+    else
+        cout<<"NO";
+    return 0;
+}
