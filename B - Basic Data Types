@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+int x ;
+long long b ;
+char d ;
+float c ;
+double y ;
+cin >> x >> b >> d >> c >> y ;
+cout << x << endl << b << endl << d << endl << c << endl << y << endl ;
+    return 0;
+}
