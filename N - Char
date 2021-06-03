@@ -1,0 +1,16 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    char N ;
+    cin >> N ;
+    if(N >= 65 && N <= 90)
+     N += 32 ;
+     else if(N >= 97 && N <= 122)
+        N -= 32 ;
+     cout << N ;
+ 
+    return 0;
+}
