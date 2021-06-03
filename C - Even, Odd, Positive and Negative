@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+long long  N , m , num1=0 , num2=0 , num3=0 ,num4=0;
+cin >> N ;
+for(int i = 0 ; i < N ; i++){
+cin >> m ;
+if(m % 2 == 0 )
+num1 += 1 ;
+if(m % 2 != 0)
+num2 += 1 ;
+if(m > 0)
+num3 += 1 ;
+if(m < 0)
+num4 += 1 ;
+}
+ 
+cout << "Even: " << num1 << endl ;
+cout << "Odd: " << num2 << endl ;
+cout << "Positive: " << num3 << endl ;
+cout << "Negative: " << num4 << endl ;
+ 
+    return 0;
+}
