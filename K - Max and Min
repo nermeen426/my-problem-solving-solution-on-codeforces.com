@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+ 
+ 
+int main() {
+long long A , B , C ;
+cin >> A >> B >> C ;
+if(B <= A && B <= C)
+cout << B <<" ";
+else if(C < A && C <= B)
+cout << C <<" ";
+else 
+cout << A <<" ";
+if(B >= A && B >= C)
+cout << B ;
+else if(C > A && C >= B)
+cout << C ;
+else
+cout << A ;
+ 
+ 
+    return 0;}
