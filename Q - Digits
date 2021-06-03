@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    long long t,n,y=0;
+    cin >> t;
+    for(int i=1 ; i<=t ;i++){
+        cin >> n;
+        if(n==0)
+       cout <<0;
+ 
+    while(n>0){
+    y =(n%10);
+    cout << y << " " ;
+    n = n/10;
+    }
+ 
+    y=0;
+    cout << endl ;
+    }
+ 
+ 
+    return 0;
+}
