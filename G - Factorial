@@ -1,0 +1,19 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int n, num;
+    long long fact=1;
+    cin>> n;
+    for(int i=0; i<n; i++){
+        cin>>num;
+        for(int j=1; j<=num; j++){
+            fact=fact*j;
+        }
+        cout<< fact<<endl;
+        fact=1;
+    }
+    return 0;
+}
