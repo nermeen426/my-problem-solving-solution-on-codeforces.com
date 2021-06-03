@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int N,e=1 ;
+    cin >> N;
+    for(int i=1 ; i<=N ; i++){
+      for(int j=N-1 ; j>=i ; j--){
+        cout << " ";
+      }
+      for(int c=0 ; c<e ;c++){
+        cout << "*";
+      }
+      cout << endl ;
+      e+=2;
+      }
+ 
+    return 0;
+}
