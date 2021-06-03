@@ -1,0 +1,16 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    char N ;
+    cin >> N ;
+    if(N >= 48 && N <= 57)
+        cout << "IS DIGIT" << endl ;
+    else if(N >= 65 && N <= 90)
+        cout << "ALPHA" << endl << "IS CAPITAL" << endl ;
+    else if(N >= 97 && N <= 122)
+        cout << "ALPHA" << endl << "IS SMALL" << endl ;
+    return 0;
+}
