@@ -1,0 +1,37 @@
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+  long long a,b,x,y=0,total=0;
+  bool islucky=false , stop=true;
+  cin >> a >> b;
+  for(int i=a ; i<=b ;i++){
+    x=i;
+    total=i;
+    while(x>0){
+    y=(x%10);
+    x/=10;
+    if(y==4 || y==7){
+        islucky=true;
+        if(x==0){
+            stop=false;
+        cout << total << " ";}
+    }
+ 
+    else{
+        islucky=false;
+        break;
+        }
+   }
+ 
+ 
+}
+if(islucky==false && stop==true){
+    cout << -1;
+}
+ 
+    return 0;
+}
