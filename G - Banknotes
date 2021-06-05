@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   long long n , bn_50 , bn_20 , m  ;
+   cin >> n ;
+   bn_50 = n / 50 ;
+   n %= 50 ;
+   bn_20 = n / 20 ;
+   n %= 20 ;
+ 
+   m = bn_50 + bn_20 + n ;
+   cout << m << endl ;
+ 
+    return 0;
+}
