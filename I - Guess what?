@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+ 
+ 
+int main()
+{
+   long long  n, k, a, r;
+   long long  m;
+   cin>>n>>k>>a;
+   m=(long long int)((n*k)/a);
+   r=(n*k)%a;
+   if(r==0 && m > 2147483647)
+         cout<< "long long\n";
+    else if (r==0 && m<2147483647 )
+        cout<< "int\n";
+   else
+    cout<< "double\n";
+    return 0;
+}
