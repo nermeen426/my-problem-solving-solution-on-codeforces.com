@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int main()
+{
+   double x1 , x2 , y1 , y2 , d , r  ;
+ 
+   cin >> x1 >> y1 >> r ;
+   if (x1 >= -100000 && x1 <= 100000 && y1 >= -100000 && y1 <= 100000 &&r > 0 && r <= 300000 ){
+   cin  >> x2 >> y2 ;
+    if ( x2 >= -100000 && x2 <= 100000 && y2 >= -100000 && y2 <= 100000){
+  d = sqrt (pow(x2 - x1,2) + pow (y2 - y1,2 )) ;
+ 
+   if (d <= r )
+    cout << " YES" << endl ;
+   else
+    cout << " NO " << endl ;
+   }
+ 
+   }
+ 
+ 
+    return 0;
+}
