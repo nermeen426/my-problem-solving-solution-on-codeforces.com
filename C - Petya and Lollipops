@@ -1,0 +1,22 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int n , num25 , num10 , num5 , num1 , minNum = 0 ;
+    cin >> n ;
+    if ( n >= 2 && n <= 1000000 && n%2 == 0 && n != 10 ){
+        num25 = n / 25 ;
+        n  %= 25 ;
+        num10 = n / 10 ;
+        n %= 10 ;
+        num5 = n / 5 ;
+        num1 = n % 5 ;
+        minNum = num25 + num10 + num5 + num1 ;
+    }
+ 
+    cout <<  minNum  ;
+ 
+    return 0;
+}
