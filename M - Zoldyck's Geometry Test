@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int main()
+{
+    double R,S;
+    cin >> R >> S;
+    if (2*R>=S && 2*R>sqrt(2*pow(S,2)))
+        cout << "Circle";
+ 
+    else if(2*R<=S && 2*R<sqrt(2*pow(S,2)))
+        cout << "Square";
+    else
+        cout << "Complex";
+    return 0;
+}
