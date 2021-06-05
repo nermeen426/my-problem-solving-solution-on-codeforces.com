@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+ 
+const double pi = 3.141592653589 ;
+ 
+using namespace std;
+ 
+int main()
+{
+    long long  R , N ;
+    cin >> N >> R ;
+ 
+    cout << fixed << setprecision(6) << ( pi * R * R ) - ( N * N ) << endl ;
+ 
+    return 0 ;
+}
