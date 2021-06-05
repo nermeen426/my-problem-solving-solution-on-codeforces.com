@@ -1,0 +1,68 @@
+#include <iostream>
+ 
+using namespace std ;
+ 
+int main()
+{
+    long long x , y , z ;
+    char op , comp ;
+ 
+   cin >> x >> op >> y >> comp >> z ;
+    if ( op == '+' && comp == '<' ) {
+        if ( x + y < z )
+         cout << " Yes "<< endl ;
+        else
+        cout << " No " << endl ;
+    }
+ 
+   else if ( op == '+' && comp == '>' ) {
+            if ( x + y  > z)
+                cout << " Yes " << endl ;
+            else
+            cout << " No " << endl ;
+        }
+   else if ( op == '+' && comp == '=' ) {
+       if (x + y == z )
+        cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+   else if ( op == '-' && comp == '<' )  {
+       if ( x - y < z)
+        cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+    else if ( op == '-' && comp == '>')  {
+       if ( x - y > z )
+            cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+   else if ( op == '-' && comp == '=' )  {
+       if ( x - y == z)
+            cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+   else if ( op == '*' && comp == '<' )  {
+       if ( x * y < z )
+        cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+     else if ( op == '*' && comp == '>' )  {
+      if ( x * y > z )
+        cout << " Yes " << endl ;
+      else
+        cout << " No " << endl ;
+   }
+   else if ( op == '*' && comp == '=' )  {
+       if ( x * y == z )
+            cout << " Yes " << endl ;
+       else
+        cout << " No " << endl ;
+   }
+ 
+    return 0;
+}
